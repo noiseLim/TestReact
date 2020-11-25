@@ -19,11 +19,28 @@ const Header = () => {
 }
 
 const Field = () => {
-    return <input type="text" placeholder="Type here"></input>
+    const holder = "Enter here";
+    const styleField = {
+        width: '300px'
+    }
+    return <input
+                style = {styleField}
+                type="text"
+                placeholder={holder}
+                autoComplete=""
+                className="first"
+                htmlFor="" />
 }
 
 const Btn = () => {
-    return <button/>
+    const text = "Log in";
+    // const res = () => {
+    //    return 'Log in, please!' 
+    // }
+    // const p = <p>LOG!!!</p>
+    const logged = false;
+return <button>{logged ? "Enter" : text}</button>
+// Если logged =  true, тогда "Enter, если нет text"
 }
 
 const App = () => {
